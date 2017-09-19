@@ -1,3 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:nytm/ios-podspecs.git'
+
+platform :ios, '9.0'
+
 use_frameworks!
 
 target '${POD_NAME}_Example' do
@@ -5,6 +10,7 @@ target '${POD_NAME}_Example' do
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
+    platform :ios, '9.0'
 
     ${INCLUDED_PODS}
   end

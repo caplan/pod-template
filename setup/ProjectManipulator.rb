@@ -1,7 +1,8 @@
 require 'xcodeproj'
 
 module Pod
-
+  $VERBOSE = true
+  $DEBUG = true
   class ProjectManipulator
     attr_reader :configurator, :xcodeproj_path, :platform, :remove_demo_target, :string_replacements, :prefix
 
